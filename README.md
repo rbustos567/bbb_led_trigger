@@ -4,6 +4,18 @@ A Linux character device driver (`/dev/bbb_led`) designed for the BeagleBone Bla
 
 ---
 
+## 🛠️ Prerequisites & Features
+
+### Prerequisites (Debian)
+Ensure your BeagleBone Black is running Debian and has the matching Linux kernel headers installed before building out-of-tree kernel modules:
+
+```bash
+# Update package index
+sudo apt update
+
+# Install build essentials and matching kernel headers for Debian
+sudo apt install -y build-essential linux-headers-$(uname -r)
+
 ## 🛠️ Features
 
 * **Safe User-Kernel Data Transfer:** Uses `copy_from_user` and `copy_to_user` to interact safely across protection rings.
