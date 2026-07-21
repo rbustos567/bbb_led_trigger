@@ -16,9 +16,9 @@ A Linux character device driver (`/dev/bbb_led`) designed for the BeagleBone Bla
 
 ### 1. Build the Kernel Module
 Compile the driver against your running kernel headers:
-\`\`\`bash
+```bash
 make
-\`\`\`
+```
 
 ### 2. Load the Module & Create Device Node
 Insert the compiled module into kernel space, create its associated character device node, and set access permissions:
