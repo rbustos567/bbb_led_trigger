@@ -15,6 +15,7 @@ sudo apt update
 
 # Install build essentials and matching kernel headers for Debian
 sudo apt install -y build-essential linux-headers-$(uname -r)
+```
 
 ## 🛠️ Features
 
